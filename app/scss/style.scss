@@ -195,6 +195,7 @@
   &-author{
     display: flex;
     align-items: center;
+    max-width: 245px;
     .avatar{
       width: 30px;
       height: 30px;
@@ -210,6 +211,12 @@
       font-weight: 500;
     }
     
+  }
+  &-star{
+    font-size: 12px;
+    span{
+      color: $bg;
+    }
   }
 }
 .products__bottom-btn{
@@ -230,28 +237,44 @@
   }
 
 }
-
-
- 
-
-
-
 /******************  end PRODUCTS  *******************/
 
+/******************  start PRODUCT-SLIDER  *******************/
+.product-slider{
+  padding: 110px 0px 120px;
+  .slick-dots{
+    text-align: center;
+    margin-top: 50px;
+    li {
+      display: inline-block;
+      margin-left: 3px;
+      margin-right: 3px;
+      &.slick-active{
+        button{
+          background-color: $green;
+        }
+      }
 
-
-
-
-
-
-
-.Rectangle_54_copy {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
-  position: absolute;
-  left: 30px;
-  top: 987px;
-  width: 442px;
-  height: 408px;
-  z-index: 470;
+      button{
+        border-radius: 50%;
+        background-color: rgb(232, 232, 232);
+        border: none;
+        font-size: 0;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
 }
+
+
+
+
+
+/******************  end PRODUCT-SLIDER  *******************/
+
+
+
+
